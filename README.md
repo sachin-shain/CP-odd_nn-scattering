@@ -19,11 +19,14 @@ The jupyter notebook files calculates the CP-even data. The files are
   - calculate $C_0(\Lambda)$ by fitting to given $\delta_0$ at $E_{\rm lab} = 10\ {\rm MeV}$.
 - *cp_even_plots.ipynb*: generate phase shifts vs $\Lambda$ plots and save as pdf in the folder **cp_even_plots**.
 - *comparision_plot.ipynb*: generate phase shifts calculated and experimental values vs $E_{\rm lab}$ and save as pdf in the folder **comparison_plots**.
+- *main.ipynb*: This file generate all the results, if you wish to go through the details. 
 
 The files should be run in the order listed above. The results are stored in the folders
 - **c0**: $C_0(\Lambda)$.
 - **cp_even_plots**: phase-shifts/mixing-angles vs $\Lambda$. 
 - **comparison_plots**: phase-shifts/mixing-angles calculated and experimental vs $E_{\rm lab}$. The experimental data files are stored in the subfolder **data**.
+
+To save time on computation, the cp-even potential values are stored in *pot_even.csv*.
 
 ## CP Odd
 The jupyter notebook files calculates the CP-odd data. The files are
@@ -41,7 +44,10 @@ The jupyter notebook files calculates the CP-odd data. The files are
 - *cpv_plots.ipynb*: 
   - generate phase shifts vs $\Lambda$ plots and save as pdf in the folder **cp_odd_plots** for $j=0$.
   - generate data file to make phase shifts vs $\Lambda$ plots for $j=1$.
+ - *main.ipynb*: This file generate all the results, if you wish to go through the details. 
 
 The results are stored in the folder
 - **c0**: CP-even and CP-odd $C_0(\Lambda)$. CP-odd data is copied from the 'CP Even' folder. 
 - **cp_even_plots**: phase-shifts/mixing-angles vs $\Lambda$ for  $\delta_0=\\{0.01,0.11,-0.09,0.00\\}\bar g_0$ at $E_{\rm lab} = \\{10,20,100,190\\}\ {\rm MeV}$.
+
+To save time on computation, the cp-even and cp-odd potential values are stored in *pot_total.csv*.
